@@ -12,7 +12,9 @@ Role Variables
 --------------
 
 nginx\_letsencrypt\_path: "/path/to/certbot"
+
 nginx\_letsencrypt\_email: "changeme@email.com"
+
 nginx\_letsencrypt\_domain: "example.server.com"
 
 Dependencies

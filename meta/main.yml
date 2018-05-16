@@ -1,5 +1,6 @@
 galaxy_info:
   author: Hunter Mayers
+  description: Sets up auto renewing ssl certs using certbot for nginx on Amazon Linux.
   company: Liatrio
 
   license: MIT
@@ -7,9 +8,9 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-  - name: "AWS linux"
+  - name: Amazon
     versions:
-    - "2018.03.0.20180412"
+    - 2018.03
 
   galaxy_tags: []
 

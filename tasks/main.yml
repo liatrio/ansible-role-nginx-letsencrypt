@@ -7,7 +7,7 @@
     mode: 0770
 
 - name: "nginx-letsencrypt | run certbot for nginx"
-  shell: "{{ nginx_letsencrypt_path }}/certbot-auto" -n --nginx --debug --redirect --agree-tos --email "{{ nginx_letsencrypt_email }}" --domains "{{ nginx_letsencrypt_domain }}"
+  shell: "{{ nginx_letsencrypt_path }}/certbot-auto -n --nginx --debug --redirect --agree-tos --email {{ nginx_letsencrypt_email }} --domains {{ nginx_letsencrypt_domain }}"
 
 - name: "nginx-letsencrypt | create cron job"
   cron:

@@ -11,9 +11,9 @@ Nginx
 Role Variables
 --------------
 
-nginx\_letsencrypt\_host
-nginx\_letsencrypt\_email
-nginx\_letsencrypt\_domain
+nginx\_letsencrypt\_path: "/path/to/certbot"
+nginx\_letsencrypt\_email: "changeme@email.com"
+nginx\_letsencrypt\_domain: "example.server.com"
 
 Dependencies
 ------------
@@ -23,11 +23,13 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+      - role: liatrio.nginx-letsencrypt
+        become: yes
+        nginx_letsencrypt_path: "/home/ec2-user"
+        letsencrypt_email: "example@liatrio.com"
+        letsencrypt_domain: "example.fastfeedback.rocks"
 
 License
 -------
@@ -37,4 +39,3 @@ MIT
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).

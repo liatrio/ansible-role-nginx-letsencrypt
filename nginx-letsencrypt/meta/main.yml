@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Hunter Mayers
+  company: Liatrio
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+   platforms:
+   - name: AWS linux
+     versions:
+     - 2018.03.0.20180412
+
+  galaxy_tags: []
+
+dependencies: []

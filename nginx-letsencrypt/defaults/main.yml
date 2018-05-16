@@ -1,0 +1,6 @@
+---
+# defaults file for nginx-letsencrypt
+nginx_letsencrypt_path: "/home/ec2-user"
+nginx_letsencrypt_email: "changeme@email.com"
+nginx_letsencrypt_domain: "example.server.com"
+
